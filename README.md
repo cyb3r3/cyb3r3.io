@@ -1,3 +1,1 @@
-# https://cyb3r3.github.io/cyb3r3.gitub.io/
-All you want to know is on this website. 
-
+If you have any techincal issues on my website, contact me on cyb3rrr1@gmail.com. 
