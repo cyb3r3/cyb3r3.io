@@ -1,179 +1,93 @@
 <!DOCTYPE html>
-<html lang="eg">
-
+<html lang="en">
 <head>
-  <link rel="a" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cyb3r@debian — projects</title>
+  <link rel="icon" type="image/png" href="pictures/cyb3r_text_trans_sq.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<nav>
+  <div class="nav-logo">cyb3r<span>@</span>debian</div>
+  <ul class="nav-links">
+    <li><a href="index.html">home</a></li>
+    <li><a href="project.html" class="active">projects</a></li>
+    <li><a href="edc.html">edc</a></li>
+    <li><a href="resources.html">resources</a></li>
+  </ul>
+</nav>
 
+<div class="page-wrap">
 
-<head>
-  <style>
-    a:link {
-    color: white;
-    text-decoration: none;
-} 
+  <p class="eyebrow" style="padding-top:1rem">projects</p>
+  <h1 style="font-size:1.8rem;color:var(--white);font-weight:700;margin-bottom:.4rem">
+    things i've built
+  </h1>
+  <p style="font-size:.85rem;color:var(--text-dim)">low-level tools · data tools · visualizations</p>
 
-    a:visited{
-    color: white;
+  <div class="projects-grid">
 
-}
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
+    <!-- WIP -->
+    <div class="project-card wip">
+      <p class="project-status status-wip">* work in progressn [may 2026 - now]</p>
+      <h2 class="project-title">C Sort Visualization</h2>
+      <div class="project-tags">
+        <span class="tag">C</span>
+        <span class="tag">Raylib</span>
+        <span class="tag">algorithms</span>
+      </div>
+      <p class="project-desc">
+        Real-time sorting algorithm visualizer written in C using the Raylib graphics library.
+        Watch bubble sort, quicksort, and more come alive in a live rendering window.
+      </p>
+      <a class="project-link" href="https://github.com/cyb3r3/c-visualization" target="_blank" rel="noopener">
+        ⌥ view on GitHub
+      </a>
+      <img class="project-img" src="pictures/example.png" alt="C Sort Visualization screenshot">
+    </div>
 
-    a:hover{
-    color: rgb(123, 94, 203);
+    <!-- Oxford -->
+    <div class="project-card">
+      <p class="project-status status-done">✓ finished · Aug 2024</p>
+      <h2 class="project-title">Oxford-dic</h2>
+      <div class="project-tags">
+        <span class="tag">C</span>
+        <span class="tag">CLI</span>
+        <span class="tag">offline</span>
+      </div>
+      <p class="project-desc">
+        Offline CLI dictionary containing 20,000+ words loaded from a text file.
+        Look up definitions, print all words, or export results to a text file —
+        no internet required. Runs on both Windows and Linux terminals.
+      </p>
+    </div>
 
-    }
+    <!-- CDC -->
+    <div class="project-card">
+      <p class="project-status status-done">✓ finished · Sept 2022</p>
+      <h2 class="project-title">CDC Covid 2022</h2>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">API</span>
+        <span class="tag">data</span>
+      </div>
+      <p class="project-desc">
+        Database tool that pulls data from the CDC public API and displays population
+        counts of COVID-19 cases ranging from 2019–2021.
+      </p>
+    </div>
 
-  </style>
-</head>
+  </div>
 
-  
-<body style="background-color: rgb(0, 0, 0); color: white;">
+  <a class="btn-back" href="index.html">← back to home</a>
+
+</div>
+
+<footer>
+  <span>cyb3r@debian</span> · © 2026 · <a href="https://github.com/cyb3r3/cyb3r3.io">source</a>
+</footer>
+
 </body>
-
-
-  
-
-
-<head>
-    <title>projects</title>
-    <link rel="icon" type="/pictures/cyb3r_text_trans_sq.png" href="pictures/cyb3r_text_trans_sq.png">
-</head>
-  
-<head>
-<style>
-    .button {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-}
-    .button1 {
-        background-color: #7b5ecb; 
-        color: black; 
-        
-    }
-
-    .button1:hover {
-        background-color: #a8d5ff;
-        color: white;
-    }
-    .text-lol {
-    margin: auto;
-    font-size: 20px;
-    width: 830px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 30px;
-    text-align: center;
-    
-    
-    }
-      
-    
-    .navigation{
-      margin: auto;
-      font-size: 28px;
-      width: 650px;
-      padding: 1px;
-      text-align: center;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-    }
-    .discprit{
-        margin: auto;
-      font-size: 22px;
-      width: 830px;
-      padding: 30px;
-      border: 5px solid hsl(255, 41%, 63%);
-      text-align: left;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-    }
-</style>
-
-
-
-<head>
-    <div class="text-lol">
-        <h1>Projects</h1>
-
-
-    </div>
-
-
-
-</head>
-    <body>
-    <div class="discprit">
-
-        <h3 style="text-align: left font-style: bold;  color: #efcc00 ;" ;> Work In Progress </h3>
-        <h2 style="text-align: left;">C Sort Visualization [May 2026]</h2>
-        <a href="https://github.com/cyb3r3/c-visualization">>Github</a>
-
-        <p style="text-align: left; font-style: bold; font-style: italic; color: #a192c9;" >C language, Raylib</p>
-        <img src="pictures/example.png" alt="Trulli" class="center">
-
-
-
-    </div>
-</head>
-
-    <br>
-    <div class="discprit">
-
-         <h3 style="text-align: left font-style: bold;  color: #006400 ;" ;> Finished </h3>
-        <h2 style="text-align: left;">Oxford-dic [Aug. 23, 2024]</h2>
-        <p style="text-align: left; font-style: bold; font-style: italic; color: #a192c9;" >C language</p>
-        <p style="text-align: left; font-style: bold; color: hsl(255, 41%, 63%);" >
-            This project contains 20,000+ words from text file, givng the end user of 3 options
-            of what word they want to look up. The end user can search up definition of words, print 
-            all words or quit the program. The words can be printed on a seprate text file. 
-            <br>
-            <br>    
-            All of these functions can be run on terminal on Windows and Linux. This light program
-            comes inhandy when you have no internet.
-
-        </p>
-    </div>
-</head>
-
-<br>
-
-
-<head>
-    <div class="discprit">
-
-        <h3 style="text-align: left font-style: bold;  color: #006400 ;" ;> Finished </h3>
-
-        <h2 style="text-align: left;">CDC Covid 2022 - [Sept. 2022]</h2>
-        <p style="text-align: left; font-style: bold; font-style: italic; color: #a192c9;" >Python</p>
-        <p style="text-align: left; font-style: bold; color: hsl(255, 41%, 63%);" >
-            Database program that collects data from a CDC API, showing output population of people who contracted COVID ranging from 2019-2021.
-    </div>
-</head>
-
-
-
-<body>
-    <br>
-    <div style="text-align: center;">
-        <button class="button button1">>>Return to Main</button>
-        <script src="script.js"></script>
-    </div>
-</body>
-
-<body>
-    <div class="text-lol">© 2025</div>
-</body>
+</html>
