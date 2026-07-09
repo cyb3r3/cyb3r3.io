@@ -1,81 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cyb3r@debian — resources</title>
   <link rel="icon" type="image/png" href="pictures/cyb3r_text_trans_sq.png">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .books-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 1.2rem;
-      margin-top: 1.5rem;
-    }
-
-    .book-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-top: 3px solid var(--purple);
-      padding: .9rem;
-      transition: border-color .15s, background .15s;
-      display: flex;
-      flex-direction: column;
-      gap: .6rem;
-    }
-
-    .book-card:hover {
-      border-top-color: var(--green);
-      background: var(--bg3);
-    }
-
-    .book-cover {
-      width: 100%;
-      aspect-ratio: 2/3;
-      object-fit: cover;
-      border: 1px solid var(--border);
-      display: block;
-      background: var(--bg3);
-      filter: saturate(.85) brightness(.9);
-    }
-
-    .book-cover-placeholder {
-      width: 100%;
-      aspect-ratio: 2/3;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .65rem;
-      color: var(--text-dim);
-    }
-
-    .book-title {
-      font-size: .78rem;
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.35;
-    }
-
-    .book-author {
-      font-size: .68rem;
-      color: var(--text-dim);
-    }
-
-    .book-lang {
-      display: inline-block;
-      font-size: .62rem;
-      padding: .12em .5em;
-      border-radius: 2px;
-      border: 1px solid var(--purple);
-      color: var(--purple-hi);
-      background: var(--purple-lo);
-      margin-top: auto;
-      align-self: flex-start;
-    }
-  </style>
 </head>
 <body>
 
@@ -89,71 +19,21 @@
   </ul>
 </nav>
 
-<div class="page-wrap">
+<div class="page-wrap" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;text-align:center;">
 
-  <p class="eyebrow" style="padding-top:1rem">resources</p>
-  <h1 style="font-size:1.8rem;color:var(--white);font-weight:700;margin-bottom:.4rem">books</h1>
-  <p style="font-size:.85rem;color:var(--text-dim)">
-    programming books from my
-    <a href="https://www.goodreads.com/review/list/183807712?tag=programming-book" target="_blank" rel="noopener">goodreads shelf</a>
-    · covers via <a href="https://openlibrary.org" target="_blank" rel="noopener">open library</a>
+  <p style="font-size:.8rem;color:var(--green);letter-spacing:.2em;margin-bottom:1.2rem">
+    $ ls ./resources/
   </p>
 
-  <div class="books-grid">
+  <h1 style="font-size:clamp(2rem,8vw,4rem);font-weight:700;color:var(--white);line-height:1.1;">
+    coming<span style="color:var(--purple-hi)">_</span>soon
+  </h1>
 
-    <div class="book-card">
-      <img class="book-cover"
-           src="https://covers.openlibrary.org/b/isbn/0131103628-M.jpg"
-           alt="The C Programming Language cover"
-           onerror="this.style.display='none'">
-      <p class="book-title">The C Programming Language</p>
-      <p class="book-author">Kernighan &amp; Ritchie</p>
-      <span class="book-lang">C</span>
-    </div>
+  <p style="font-size:.85rem;color:var(--text-dim);margin-top:1rem;max-width:360px;">
+    links, books, tools, and other useful stuff — being compiled now.
+  </p>
 
-    <div class="book-card">
-      <img class="book-cover"
-           src="https://covers.openlibrary.org/b/isbn/0134038177-M.jpg"
-           alt="Starting Out with Java cover"
-           onerror="this.style.display='none'">
-      <p class="book-title">Starting Out with Java: From Control Structures through Data Structures</p>
-      <p class="book-author">Tony Gaddis</p>
-      <span class="book-lang">Java</span>
-    </div>
-
-    <div class="book-card">
-      <img class="book-cover"
-           src="https://covers.openlibrary.org/b/isbn/056592116X-M.jpg"
-           alt="C++: The Core Language cover"
-           onerror="this.style.display='none'">
-      <p class="book-title">C++: The Core Language</p>
-      <p class="book-author">Satir &amp; Brown</p>
-      <span class="book-lang">C++</span>
-    </div>
-
-    <div class="book-card">
-      <img class="book-cover"
-           src="https://covers.openlibrary.org/b/isbn/0596006209-M.jpg"
-           alt="Java Examples in a Nutshell cover"
-           onerror="this.style.display='none'">
-      <p class="book-title">Java Examples in a Nutshell</p>
-      <p class="book-author">David Flanagan</p>
-      <span class="book-lang">Java</span>
-    </div>
-
-    <div class="book-card">
-      <img class="book-cover"
-           src="https://covers.openlibrary.org/b/isbn/1565920015-M.jpg"
-           alt="UNIX in a Nutshell cover"
-           onerror="this.style.display='none'">
-      <p class="book-title">UNIX in a Nutshell</p>
-      <p class="book-author">Arnold Robbins</p>
-      <span class="book-lang">Unix</span>
-    </div>
-
-  </div>
-
-  <a class="btn-back" href="index.html" style="margin-top:2.5rem">← back to home</a>
+  <a class="btn-back" href="index.html" style="margin-top:2.5rem;">← back to home</a>
 
 </div>
 
